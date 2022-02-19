@@ -1,0 +1,11 @@
+.jar {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
