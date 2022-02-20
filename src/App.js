@@ -101,15 +101,12 @@ function App() {
       <div className="jar-container">
       {Jars.map(generateJars)}
       </div>
-<<<<<<< HEAD
       {income}
       <p>Microphone: {listening ? 'on' : 'off'}</p>
       <button onClick={SpeechRecognition.startListening}>Start</button>
       <button onClick={SpeechRecognition.stopListening}>Stop</button>
       <button onClick={resetTranscript}>Reset</button>
       <p>{transcript}</p>
-=======
->>>>>>> 173de34963668c060755bd65dfd6e08be10411ff
     </div>
   );
 }
