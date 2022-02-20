@@ -1,0 +1,25 @@
+.jar {
+    width: 100px;
+    height: 150px;
+    background-color: #ffd460;
+    border: 5px #ffd460 solid;
+    border-radius: 15px;
+    border-top: none;
+    background-image: url("/public/coins.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+}
