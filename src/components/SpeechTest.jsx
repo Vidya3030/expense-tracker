@@ -6,8 +6,10 @@ const SpeechTest = (prop) => {
         <div className="jar">
 
         </div>
-        {prop.category}
-        {prop.dollar}
+        <div className="label">
+            <div>{prop.category}</div>
+            <div>{prop.dollar}</div>
+        </div>
     </div>)
 }
 
