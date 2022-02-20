@@ -9,11 +9,33 @@ function App() {
 
   const generateJars = (jar) => {
     return (
-      <SpeechTest key={jar.key} dollar={jar.dollar} category={jar.category} />
+      <SpeechTest key={jar.key} dollar={`$` + income * (jar.dollar / 100)} category={jar.category} />
     )
   }
 
-  const [income, changeIncome] = useState(0)
+  const [income, changeIncome] = useState("")
+
+  const handleChangeIncome = (e) => {
+    changeIncome(e.target.value)
+  }
+
+  function validate(evt) {
+    var theEvent = evt;
+  
+    // Handle paste
+    if (theEvent.type === 'paste') {
+        key = evt.clipboardData.getData('text/plain');
+    } else {
+    // Handle key press
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+    }
+    var regex = /[0-9]|\./;
+    if( !regex.test(key) ) {
+      theEvent.returnValue = false;
+      if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+  }
 
   const commands = [
     {
@@ -56,15 +78,34 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Keep them Jars green</h1>
+      <input 
+      onChange={(e) => {
+        handleChangeIncome(e)
+      }} 
+      onKeyPress={evt => {
+        if (evt.key === 'Enter') {
+          console.log(income)
+        } else {
+          validate(evt)
+        }
+      }} 
+      value={income} 
+      placeholder='type something'
+      />
+      {income}
       <div className="jar-container">
       {Jars.map(generateJars)}
       </div>
+<<<<<<< HEAD
       {income}
       <p>Microphone: {listening ? 'on' : 'off'}</p>
       <button onClick={SpeechRecognition.startListening}>Start</button>
       <button onClick={SpeechRecognition.stopListening}>Stop</button>
       <button onClick={resetTranscript}>Reset</button>
       <p>{transcript}</p>
+=======
+>>>>>>> 173de34963668c060755bd65dfd6e08be10411ff
     </div>
   );
 }
