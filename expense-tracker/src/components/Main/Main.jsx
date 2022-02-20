@@ -4,6 +4,7 @@ import { Doughnut } from 'react-chartjs-2';
 
 import useStyles from './styles';
 import Form from './Form/Form';
+import List from './List/List';
 
 const Main = () => {
     
@@ -24,7 +25,7 @@ const Main = () => {
             <CardContent className={classes.cardContent}>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
-                    {/* list */}
+                    <List />
                     </Grid>
                 </Grid>
             </CardContent>
