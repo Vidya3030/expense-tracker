@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+## Trackio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Budgeting and tracking personal finances are extremely important for everyone, but we found there weren’t too many apps that catered to the disabled and elderly population. Trackio aims to make personal finance and budgeting accessible to all, using Speech APIs to allow only verbal interaction between the app and the user.
 
-## Available Scripts
+#What it does
 
-In the project directory, you can run:
+Trackio takes the user’s weekly income, and divides it into six categories based off of the 6-jar financial budgeting concept. These categories include: Necessity, Financial Freedom, Play, Give, Long-Term Savings, and Education. The amounts in each are a certain percentage of the user’s income. When the user asks for the amount of money left in a specific category, the app responds verbally with the amount of money left. Future features for this app include allowing the user to change the levels in each jar as they spend money, and allowing them to customize the categories.
 
-### `npm start`
+#How we built it
+We used React JS and VS Code to create the web application. We used the react-speech-recognition package as a Speech recognition API, that has text-to-speech and voice recognition. The API was used to have the computer understand the category that the user was asking for, and respond verbally with the amount in that category.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#Challenges we ran into
+This was our first time using React and Speech APIs, and we ran into many challenges with the implementation of these softwares. Most of our challenges involved learning new concepts related to how to use the APIs or how to use React. However, we were able to follow many tutorials and eventually figure out how to get the web app to function properly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#Accomplishments that we're proud of
+We are very proud of the fact that we got the Speech APIs to work, and that the app works mostly without the use of buttons.
 
-### `npm test`
+#What we learned
+We learned a lot about using Speech APIs, especially in relation to web app development. We also gained experience in using React, CSS, and JavaScript.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#What's next for Trackio
+There is a lot in store for Trackio! We want to add more features with customizing the jars’ categories, and letting the user input the percentage of income they preferred to have for each category.
