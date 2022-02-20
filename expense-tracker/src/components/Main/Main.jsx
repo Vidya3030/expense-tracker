@@ -3,6 +3,7 @@ import { Card, CardHeader, CardContent, Typography, Grid, Divider } from '@mater
 import { Doughnut } from 'react-chartjs-2';
 
 import useStyles from './styles';
+import Form from './Form/Form';
 
 const Main = () => {
     
@@ -18,7 +19,7 @@ const Main = () => {
                  Try saying: Add income for $100 in category Salary for Monday 
                 </Typography>
                 <Divider />
-                {/* Form */}
+                <Form />
             </CardContent>
             <CardContent className={classes.cardContent}>
                 <Grid container spacing={2}>
