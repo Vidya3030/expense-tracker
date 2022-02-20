@@ -6,27 +6,27 @@ const Jars = [
     },
     {
         key: 2, 
-        category: "Necessity",
+        category: "Financial Freedom",
         dollar: "$30"
     },
     {
         key: 3, 
-        category: "Necessity",
+        category: "Long-term Savings",
         dollar: "$30"
     },
     {
         key: 4, 
-        category: "Necessity",
+        category: "Education",
         dollar: "$30"
     },
     {
         key: 5, 
-        category: "Necessity",
+        category: "Play",
         dollar: "$30"
     },
     {
         key: 6, 
-        category: "Necessity",
+        category: "Give",
         dollar: "$30"
     }
 ]

@@ -2,6 +2,7 @@
     width: 100px;
     height: 100px;
     background-color: cyan;
+    border: solid 2px black;
 }
 
 .container {
