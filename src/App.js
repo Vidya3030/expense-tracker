@@ -9,11 +9,12 @@ function App() {
 
   const generateJars = (jar) => {
     return (
-      <SpeechTest key={jar.key} dollar={`$` + income * (jar.dollar / 100)} category={jar.category} />
+      <SpeechTest key={jar.key} dollar={`$` + Math.round(income * (jar.dollar / 100)) / 100} category={jar.category} />
     )
   }
 
   const [income, changeIncome] = useState("")
+  const [hasIncome, changeIncomeStatus] = useState(false)
 
   const handleChangeIncome = (e) => {
     changeIncome(e.target.value)
@@ -79,6 +80,7 @@ function App() {
   return (
     <div className="App">
       <h1>Keep them Jars green</h1>
+      
       <input 
       onChange={(e) => {
         handleChangeIncome(e)
@@ -86,6 +88,8 @@ function App() {
       onKeyPress={evt => {
         if (evt.key === 'Enter') {
           console.log(income)
+          changeIncomeStatus(true)
+
         } else {
           validate(evt)
         }
@@ -93,7 +97,7 @@ function App() {
       value={income} 
       placeholder='type something'
       />
-      {income}
+      <h5 className="income">{income}</h5>
       <div className="jar-container">
       {Jars.map(generateJars)}
       </div>
